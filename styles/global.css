@@ -21,6 +21,7 @@ body {
     font-size: 14px;
     padding: 20px;
     user-select: none;
+
 }
 
 #container {
@@ -31,6 +32,7 @@ body {
     max-width: 90%;
     min-width: 620px;
     overflow: auto;
+    overflow-x: hidden;
 }
 
 /* Typography */
@@ -274,6 +276,9 @@ nav #prev {
     /* General Elements */
     body {
         padding: 0px;
+        background-image: none;
+        background-color: #ece5ff;
+        overflow: none;
     }
 
     #container {
@@ -281,6 +286,7 @@ nav #prev {
         max-width: 100%;
         border-radius: 0;
         padding: 20px 0px 0px 0px;
+        filter: none;
     }
 
     /* Header */
@@ -331,6 +337,10 @@ nav #prev {
     }
 
     /* Tabs */
+    .mobile .tab {
+        margin-bottom: -20px
+    }
+
     .tabs {
         margin: 0px;
         gap: 5px;
@@ -471,6 +481,10 @@ nav #prev {
 
     .card td:nth-child(3) {
         padding-left: 10px;
+    }
+
+    .card input[type="checkbox"] {
+        transform: scale(1.2);
     }
 
 
