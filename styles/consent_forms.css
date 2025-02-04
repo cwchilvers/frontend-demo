@@ -21,7 +21,7 @@ table th {
     padding: 12px 15px;
     text-align: left;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
     border-bottom: 2px solid #eee;
 }
 
@@ -132,5 +132,33 @@ table td .menu button:hover {
 
 #add-edit-button:hover {
     background-color: #8b58c5;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 4px #00000026;
+}
+
+#note {
+    padding-top: 20px;
+    margin-bottom: -10px;
+}
+
+.card .header p {
+
+    padding: 5px 15px;
+    color: var(--white);
+    border-radius: 5px;
+}
+
+.signed {
+    background-color: #65c765;
+}
+
+.pending {
+    background-color: #cf4f4f;
+}
+
+.mobile .menu {
+    margin-right: 65px;
+}
+
+.hide {
+    display: none;
 }

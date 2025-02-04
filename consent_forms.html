@@ -49,252 +49,409 @@
 
             <hr>
 
-
             <!-- Form -->
             <form id="tabbed-form">
-                <div id="tabs">
+                <!-- Desktop & Mobile Versions -->
+                <!-- 
+                    I apologize this is not the ideal way to handle any of this.
+                    This was just thrown together for creating a rough demo.
+                -->
+                <div class="desktop tabs">
                     <button class="active" data-target="tms">Team Manager(s)</button>
                     <button class="" data-target="participants">Participants</button>
                     <button class="" data-target="spectators">Spectators</button>
                 </div>
 
+                <div class="mobile tabs">
+                    <button class="active" data-target="mobile-tms">TM(s)</button>
+                    <button class="" data-target="mobile-participants">Participants</button>
+                    <button class="" data-target="mobile-spectators">Spectators</button>
+                </div>
+
                 <div class="desktop">
                     <!-- Team Managers -->
-                    <table id="tms" class="active">
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Email</th>
-                                <th>Status</th>
-                                <th>Actions</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Michael McQuaid</td>
-                                <td>
-                                    <input type="text" value="mmcquaid@aol.com">
-                                </td>
-                                <td>Signed</td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div id="tms" class="tab active">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Michael McQuaid</td>
+                                    <td>
+                                        <input type="text" value="mmcquaid@aol.com">
+                                    </td>
+                                    <td>Signed</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
 
                     <!-- Participants -->
-                    <table id="participants" class="">
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Email</th>
-                                <th>Status</th>
-                                <th>Actions</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Cache Hickman</td>
-                                <td>
-                                    <input type="text" value="cautumnturner@gmail.com">
-                                </td>
-                                <td>Signed</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Haven Edwards</td>
-                                <td>
-                                    <input type="text" value="donniealane@gmail.com">
-                                </td>
-                                <td>Signed</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Nancy Carol McQuaid</td>
-                                <td>
-                                    <input type="text" value="cautumnturner@gmail.com">
-                                </td>
-                                <td>Signed</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Kendall Ingram</td>
-                                <td>
-                                    <input type="text" value="amyingram@outlook.com">
-                                </td>
-                                <td>Signed</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Emmaline Phipps</td>
-                                <td>
-                                    <input type="text" value="ephipps607@gmail.com">
-                                </td>
-                                <td>Signed</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Sophie Mosely</td>
-                                <td>
-                                    <input type="text" value="ljmosely@charter.net">
-                                </td>
-                                <td>Signed</td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div id="participants" class="tab">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Cache Hickman</td>
+                                    <td>
+                                        <input type="text" value="cautumnturner@gmail.com">
+                                    </td>
+                                    <td>Signed</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Haven Edwards</td>
+                                    <td>
+                                        <input type="text" value="donniealane@gmail.com">
+                                    </td>
+                                    <td>Signed</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Nancy Carol McQuaid</td>
+                                    <td>
+                                        <input type="text" value="cautumnturner@gmail.com">
+                                    </td>
+                                    <td>Signed</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Kendall Ingram</td>
+                                    <td>
+                                        <input type="text" value="amyingram@outlook.com">
+                                    </td>
+                                    <td>Signed</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Emmaline Phipps</td>
+                                    <td>
+                                        <input type="text" value="ephipps607@gmail.com">
+                                    </td>
+                                    <td>Signed</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Sophie Mosely</td>
+                                    <td>
+                                        <input type="text" value="ljmosely@charter.net">
+                                    </td>
+                                    <td>Signed</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
 
                     <!-- Spectators -->
-                    <table id="spectators" class="">
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Email</th>
-                                <th>Status</th>
-                                <th>Actions</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Elizabeth McQuaid</td>
-                                <td>
-                                    <input type="text" value="">
-                                </td>
-                                <td>Signed</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Amy Ingram</td>
-                                <td>
-                                    <input type="text" value="">
-                                </td>
-                                <td>Signed</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Paris Turner</td>
-                                <td>
-                                    <input type="text" value="">
-                                </td>
-                                <td>Signed</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Donnie Edwards</td>
-                                <td>
-                                    <input type="text" value="">
-                                </td>
-                                <td>Signed</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Carl Edwards</td>
-                                <td>
-                                    <input type="text" value="">
-                                </td>
-                                <td>Signed</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Autumn Turner</td>
-                                <td>
-                                    <input type="text" value="">
-                                </td>
-                                <td>Signed</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Pallavi Garg</td>
-                                <td>
-                                    <input type="text" value="">
-                                </td>
-                                <td>Signed</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Viendra Garg</td>
-                                <td>
-                                    <input type="text" value="">
-                                </td>
-                                <td>Signed</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Eshaan Garg</td>
-                                <td>
-                                    <input type="text" value="">
-                                </td>
-                                <td>Signed</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Avini Bansal</td>
-                                <td>
-                                    <input type="text" value="">
-                                </td>
-                                <td>Pending</td>
-                                <td>
-                                    <div class="menu-icon">
-                                        <span>⋮</span>
-                                        <div class="menu">
-                                            <button>Send Email</button>
-                                            <button>Copy Link</button>
+                    <div id="spectators" class="tab">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Elizabeth McQuaid</td>
+                                    <td>
+                                        <input type="text" value="">
+                                    </td>
+                                    <td>Signed</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Amy Ingram</td>
+                                    <td>
+                                        <input type="text" value="">
+                                    </td>
+                                    <td>Signed</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Paris Turner</td>
+                                    <td>
+                                        <input type="text" value="">
+                                    </td>
+                                    <td>Signed</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Donnie Edwards</td>
+                                    <td>
+                                        <input type="text" value="">
+                                    </td>
+                                    <td>Signed</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Carl Edwards</td>
+                                    <td>
+                                        <input type="text" value="">
+                                    </td>
+                                    <td>Signed</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Autumn Turner</td>
+                                    <td>
+                                        <input type="text" value="">
+                                    </td>
+                                    <td>Signed</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Pallavi Garg</td>
+                                    <td>
+                                        <input type="text" value="">
+                                    </td>
+                                    <td>Signed</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Viendra Garg</td>
+                                    <td>
+                                        <input type="text" value="">
+                                    </td>
+                                    <td>Signed</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Eshaan Garg</td>
+                                    <td>
+                                        <input type="text" value="">
+                                    </td>
+                                    <td>Signed</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Avini Bansal</td>
+                                    <td>
+                                        <input type="text" value="">
+                                    </td>
+                                    <td>Pending</td>
+                                    <td>
+                                        <div class="menu-icon">
+                                            <span>⋮</span>
+                                            <div class="menu">
+                                                <button>Send Email</button>
+                                                <button>Copy Link</button>
+                                            </div>
                                         </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Anaya Bansal</td>
-                                <td>
-                                    <input type="text" value="">
-                                </td>
-                                <td>Pending</td>
-                                <td>
-                                    <div class="menu-icon">
-                                        <span>⋮</span>
-                                        <div class="menu">
-                                            <button>Send Email</button>
-                                            <button>Copy Link</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Anaya Bansal</td>
+                                    <td>
+                                        <input type="text" value="">
+                                    </td>
+                                    <td>Pending</td>
+                                    <td>
+                                        <div class="menu-icon">
+                                            <span>⋮</span>
+                                            <div class="menu">
+                                                <button>Send Email</button>
+                                                <button>Copy Link</button>
+                                            </div>
                                         </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Dr. Ajay Bansal</td>
-                                <td>
-                                    <input type="text" value="">
-                                </td>
-                                <td>Pending</td>
-                                <td>
-                                    <div class="menu-icon">
-                                        <span>⋮</span>
-                                        <div class="menu">
-                                            <button>Send Email</button>
-                                            <button>Copy Link</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Dr. Ajay Bansal</td>
+                                    <td>
+                                        <input type="text" value="">
+                                    </td>
+                                    <td>Pending</td>
+                                    <td>
+                                        <div class="menu-icon">
+                                            <span>⋮</span>
+                                            <div class="menu">
+                                                <button>Send Email</button>
+                                                <button>Copy Link</button>
+                                            </div>
                                         </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Dr. Aditi Bansal</td>
-                                <td>
-                                    <input type="text" value="">
-                                </td>
-                                <td>Pending</td>
-                                <td>
-                                    <div class="menu-icon">
-                                        <span>⋮</span>
-                                        <div class="menu">
-                                            <button>Send Email</button>
-                                            <button>Copy Link</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Dr. Aditi Bansal</td>
+                                    <td>
+                                        <input type="text" value="">
+                                    </td>
+                                    <td>Pending</td>
+                                    <td>
+                                        <div class="menu-icon">
+                                            <span>⋮</span>
+                                            <div class="menu">
+                                                <button>Send Email</button>
+                                                <button>Copy Link</button>
+                                            </div>
                                         </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+                <!-- Mobile -->
+                <div class="mobile">
+                    <!-- Team Managers -->
+                    <div id="mobile-tms" class="tab active">
+                        <div class="card">
+                            <div class="header">
+                                <p class="status signed">Signed</p>
+                                <h4>Michael McQuaid</h4>
+                            </div>
+                            <div class="email">
+                                <p>Email Address</p>
+                                <input type="text" value="mmcquaid@earthlink.net">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Participants -->
+                    <div id="mobile-participants" class="tab">
+                        <div class="card">
+                            <div class="header">
+                                <p class="status signed">Signed</p>
+                                <h4>Cache Hickman</h4>
+                            </div>
+                            <div class="email">
+                                <p>Email Address</p>
+                                <input type="text" value="cautumnturner@gmail.com">
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="header">
+                                <p class="status signed">Signed</p>
+                                <h4>Haven Edwards</h4>
+                            </div>
+                            <div class="email">
+                                <p>Email Address</p>
+                                <input type="text" value="donnieelane@gmail.com">
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="header">
+                                <p class="status signed">Signed</p>
+                                <h4>Kendall Ingram</h4>
+                            </div>
+                            <div class="email">
+                                <p>Email Address</p>
+                                <input type="text" value="amyingram.rn@outlook.com">
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="header">
+                                <p class="status pending">Pending</p>
+                                <h4>Cache Hickman</h4>
+                                <div class="menu-icon">
+                                    <img src="assets/menu.svg" height="10px">
+                                    <div class="menu">
+                                        <button>Send Form</button><br>
+                                        <button>Copy Link</button>
                                     </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                                </div>
+                            </div>
+                            <div class="email">
+                                <p>Email Address</p>
+                                <input type="text" value="cautumnturner@gmail.com">
+                            </div>
+                        </div>
+
+                        <!-- This isn't functional, just here to get a rough idea visually -->
+                        <div class="page-selection">
+                            <div class="page active">1</div>
+                            <div class="page">2</div>
+                        </div>
+                    </div>
+
+                    <!-- Spectators -->
+                    <div id="mobile-spectators" class="tab">
+                        <div class="card">
+                            <div class="header">
+                                <p class="status signed">Signed</p>
+                                <h4>Elizabeth McQuaid</h4>
+                            </div>
+                            <div class="email">
+                                <p>Email Address</p>
+                                <input type="text" value="emcquaid@gmail.com">
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="header">
+                                <p class="status signed">Signed</p>
+                                <h4>Amy Ingram</h4>
+                            </div>
+                            <div class="email">
+                                <p>Email Address</p>
+                                <input type="text" value="amyingram87@cox.net">
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="header">
+                                <p class="status pending">Pending</p>
+                                <h4>Cache Hickman</h4>
+                                <div class="menu-icon">
+                                    <img src="assets/menu.svg" height="10px">
+                                    <div class="menu">
+                                        <button>Send Form</button><br>
+                                        <button>Copy Link</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="email">
+                                <p>Email Address</p>
+                                <input type="text" value="cautumnturner@gmail.com">
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="header">
+                                <p class="status pending">Pending</p>
+                                <h4>Dr. Ajay Bansal</h4>
+                                <div class="menu-icon">
+                                    <img src="assets/menu.svg" height="10px">
+                                    <div class="menu">
+                                        <button>Send Form</button><br>
+                                        <button>Copy Link</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="email">
+                                <p>Email Address</p>
+                                <input type="text" value="ajbansal@hotmail.com">
+                            </div>
+                        </div>
+
+                        <!-- This isn't functional, just here to get a rough idea visually -->
+                        <div class="page-selection">
+                            <div class="page active">1</div>
+                            <div class="page">2</div>
+                            <div class="page">3<div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </form>
-
 
             <hr>
 
