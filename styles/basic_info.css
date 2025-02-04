@@ -1,0 +1,17 @@
+/* Form */
+form table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+form td {
+    padding: 12px 10px;
+    vertical-align: middle;
+}
+
+form label {
+    font-weight: 600;
+    color: var(--black);
+    display: inline-block;
+    min-width: 120px;
+}

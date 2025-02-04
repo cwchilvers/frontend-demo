@@ -1,0 +1,655 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="./assets/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destination Imagination | Team Registration</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/attendees.css">
+</head>
+
+<body>
+
+    <!-- Container -->
+    <div id="container">
+
+        <!-- Header -->
+        <header>
+            <img src="assets/logo.svg">
+            <h1>Team Registration</h1>
+        </header>
+
+        <!-- Stepper -->
+        <div id="step">
+            <div class="text">
+                <h2>Attendees</h2>
+                <p>Step 2</p>
+            </div>
+            <img src="assets/stepper-2.svg">
+        </div>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Instructions -->
+            <div class="instruction">
+                <p><span class="emphasis">Select</span> all TMs & Participants attending Global Finals.</p>
+                <p>Include any spectators below.</p>
+            </div>
+
+            <hr>
+
+            <!-- Form -->
+            <form id="tabbed-form">
+                <!-- Desktop & Mobile Versions -->
+                <!-- 
+                    I apologize this is not the ideal way to handle any of this.
+                    This was just thrown together for creating a rough demo.
+                -->
+                <div class="desktop tabs">
+                    <button class="active" data-target="tms">Team Manager(s)</button>
+                    <button class="" data-target="participants">Participants</button>
+                    <button class="" data-target="spectators">Spectators</button>
+                </div>
+
+                <div class="mobile tabs">
+                    <button class="active" data-target="mobile-tms">TM(s)</button>
+                    <button class="" data-target="mobile-participants">Participants</button>
+                    <button class="" data-target="mobile-spectators">Spectators</button>
+                </div>
+
+
+                <div class="desktop">
+                    <!-- Team Managers -->
+                    <div id="tms" class="tab active">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Attend</th>
+                                    <th>Teams</th>
+                                    <th>Name</th>
+                                    <th>Pronouns</th>
+                                    <th>First Year</th>
+                                    <th>First GF</th>
+                                    <th>DI Alumn</th>
+                                    <th>TM Cert (23/24)</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>
+                                        1
+                                    </td>
+                                    <td>Michael McQuaid</td>
+                                    <td>He/Him</td>
+                                    <td>
+                                        <select>
+                                            <option>Yes</option>
+                                            <option>No</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select>
+                                            <option>Yes</option>
+                                            <option>No</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select>
+                                            <option>Yes</option>
+                                            <option>No</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select>
+                                            <option>Yes</option>
+                                            <option>No</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <div class="menu-icon">
+                                            <span>⋮</span>
+                                            <div class="menu">
+                                                <button>Edit</button>
+                                                <button>Delete</button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Participants -->
+                    <div id="participants" class="tab">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Attend</th>
+                                    <th>Name</th>
+                                    <th>Pronouns</th>
+                                    <th>Age on April 17, 2024</th>
+                                    <th>First Year</th>
+                                    <th>First GF</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>Cache Hickman</td>
+                                    <td>He/Him</td>
+                                    <td>
+                                        <select>
+                                            <option>15 yrs</option>
+                                            <option>16 yrs</option>
+                                            <option>17 yrs</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select>
+                                            <option>Yes</option>
+                                            <option>No</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select>
+                                            <option>Yes</option>
+                                            <option>No</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <div class="menu-icon">
+                                            <span>⋮</span>
+                                            <div class="menu">
+                                                <button>Edit</button>
+                                                <button>Delete</button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>Haven Edwards</td>
+                                    <td>She/Her</td>
+                                    <td>
+                                        <select>
+                                            <option>15 yrs</option>
+                                            <option>16 yrs</option>
+                                            <option>17 yrs</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select>
+                                            <option>Yes</option>
+                                            <option>No</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select>
+                                            <option>Yes</option>
+                                            <option>No</option>
+                                        </select>
+                                    </td>
+
+                                    <td>
+                                        <div class="menu-icon">
+                                            <span>⋮</span>
+                                            <div class="menu">
+                                                <button>Edit</button>
+                                                <button>Delete</button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>Nancy Carol McQuaid</td>
+                                    <td>She/Her</td>
+                                    <td>
+                                        <select>
+                                            <option>15 yrs</option>
+                                            <option>16 yrs</option>
+                                            <option>17 yrs</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select>
+                                            <option>Yes</option>
+                                            <option>No</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select>
+                                            <option>Yes</option>
+                                            <option>No</option>
+                                        </select>
+                                    </td>
+
+                                    <td>
+                                        <div class="menu-icon">
+                                            <span>⋮</span>
+                                            <div class="menu">
+                                                <button>Edit</button>
+                                                <button>Delete</button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>Kendall Ingram</td>
+                                    <td>She/Her</td>
+                                    <td>
+                                        <select>
+                                            <option>15 yrs</option>
+                                            <option>16 yrs</option>
+                                            <option>17 yrs</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select>
+                                            <option>Yes</option>
+                                            <option>No</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select>
+                                            <option>Yes</option>
+                                            <option>No</option>
+                                        </select>
+                                    </td>
+
+                                    <td>
+                                        <div class="menu-icon">
+                                            <span>⋮</span>
+                                            <div class="menu">
+                                                <button>Edit</button>
+                                                <button>Delete</button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>Emmaline Phipps</td>
+                                    <td>She/Her</td>
+                                    <td>
+                                        <select>
+                                            <option>15 yrs</option>
+                                            <option>16 yrs</option>
+                                            <option>17 yrs</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select>
+                                            <option>Yes</option>
+                                            <option>No</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select>
+                                            <option>Yes</option>
+                                            <option>No</option>
+                                        </select>
+                                    </td>
+
+                                    <td>
+                                        <div class="menu-icon">
+                                            <span>⋮</span>
+                                            <div class="menu">
+                                                <button>Edit</button>
+                                                <button>Delete</button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>Sophie Moseley</td>
+                                    <td>They/Them</td>
+                                    <td>
+                                        <select>
+                                            <option>15 yrs</option>
+                                            <option>16 yrs</option>
+                                            <option>17 yrs</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select>
+                                            <option>Yes</option>
+                                            <option>No</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select>
+                                            <option>Yes</option>
+                                            <option>No</option>
+                                        </select>
+                                    </td>
+
+                                    <td>
+                                        <div class="menu-icon">
+                                            <span>⋮</span>
+                                            <div class="menu">
+                                                <button>Edit</button>
+                                                <button>Delete</button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Spectators -->
+                    <div id="spectators" class="tab">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Pronouns</th>
+                                    <th>Age on April 12, 2024</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Elizabeth McQuaid</td>
+                                    <td>
+                                        <select>
+                                            <option>Prefer not to answer</option>
+                                            <option>He/Him</option>
+                                            <option>She/Her</option>
+                                            <option>They/Them</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select>
+                                            <option>Over 18</option>
+                                            <option>Under 18</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <div class="menu-icon">
+                                            <span>⋮</span>
+                                            <div class="menu">
+                                                <button>Edit</button>
+                                                <button>Delete</button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Amy Ingram</td>
+                                    <td>
+                                        <select>
+                                            <option>Prefer not to answer</option>
+                                            <option>He/Him</option>
+                                            <option>She/Her</option>
+                                            <option>They/Them</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select>
+                                            <option>Over 18</option>
+                                            <option>Under 18</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <div class="menu-icon">
+                                            <span>⋮</span>
+                                            <div class="menu">
+                                                <button>Edit</button>
+                                                <button>Delete</button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Paris Turner</td>
+                                    <td>
+                                        <select>
+                                            <option>Prefer not to answer</option>
+                                            <option>He/Him</option>
+                                            <option>She/Her</option>
+                                            <option>They/Them</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select>
+                                            <option>Over 18</option>
+                                            <option>Under 18</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <div class="menu-icon">
+                                            <span>⋮</span>
+                                            <div class="menu">
+                                                <button>Edit</button>
+                                                <button>Delete</button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Donnie Edwards</td>
+                                    <td>
+                                        <select>
+                                            <option>Prefer not to answer</option>
+                                            <option>He/Him</option>
+                                            <option>She/Her</option>
+                                            <option>They/Them</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select>
+                                            <option>Over 18</option>
+                                            <option>Under 18</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <div class="menu-icon">
+                                            <span>⋮</span>
+                                            <div class="menu">
+                                                <button>Edit</button>
+                                                <button>Delete</button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Carl Edwards</td>
+                                    <td>
+                                        <select>
+                                            <option>Prefer not to answer</option>
+                                            <option>He/Him</option>
+                                            <option>She/Her</option>
+                                            <option>They/Them</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select>
+                                            <option>Over 18</option>
+                                            <option>Under 18</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <div class="menu-icon">
+                                            <span>⋮</span>
+                                            <div class="menu">
+                                                <button>Edit</button>
+                                                <button>Delete</button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Autumn Turner</td>
+                                    <td>
+                                        <select>
+                                            <option>Prefer not to answer</option>
+                                            <option>He/Him</option>
+                                            <option>She/Her</option>
+                                            <option>They/Them</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select>
+                                            <option>Over 18</option>
+                                            <option>Under 18</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <div class="menu-icon">
+                                            <span>⋮</span>
+                                            <div class="menu">
+                                                <button>Edit</button>
+                                                <button>Delete</button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Pallavi Garg</td>
+                                    <td>
+                                        <select>
+                                            <option>Prefer not to answer</option>
+                                            <option>He/Him</option>
+                                            <option>She/Her</option>
+                                            <option>They/Them</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select>
+                                            <option>Over 18</option>
+                                            <option>Under 18</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <div class="menu-icon">
+                                            <span>⋮</span>
+                                            <div class="menu">
+                                                <button>Edit</button>
+                                                <button>Delete</button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Virendra Garg</td>
+                                    <td>
+                                        <select>
+                                            <option>Prefer not to answer</option>
+                                            <option>He/Him</option>
+                                            <option>She/Her</option>
+                                            <option>They/Them</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select>
+                                            <option>Over 18</option>
+                                            <option>Under 18</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <div class="menu-icon">
+                                            <span>⋮</span>
+                                            <div class="menu">
+                                                <button>Edit</button>
+                                                <button>Delete</button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+                <!-- Mobile -->
+                <div class="mobile">
+                    <!-- Team Managers -->
+                    <div id="mobile-tms" class="tab active">
+                        <div class="card">
+                            <div class="header">
+                                <label>
+                                    <input type="checkbox">
+                                    <h4>Michael McQuaaid</h4>
+                                </label>
+                                <div class="menu-icon">
+                                    <span>⋮</span>
+                                    <div class="menu">
+                                        <button>Edit</button>
+                                        <button>Delete</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Teams:</strong></td>
+                                        <td>1</td>
+                                        <td><strong>First GF:</strong></td>
+                                        <td>No</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Pronouns:</strong></td>
+                                        <td>He/Him</td>
+                                        <td><strong>DI Alum:</strong></td>
+                                        <td>Yes</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>First Year:</strong></td>
+                                        <td>No</td>
+                                        <td><strong>TM Certification 23/24:</strong></td>
+                                        <td>Yes</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Participants -->
+                    <div id="mobile-participants" class="tab">
+                    </div>
+
+                    <!-- Spectators -->
+                    <div id="mobile-spectators" class="tab">
+                    </div>
+                </div>
+
+                <div id="note" class="instruction">
+                    <p><span class="emphasis">Note: </span>TMs must complete a background check & be marked
+                        eligible/exempt to register for Global
+                        Finals.</p>
+                    <p>
+                        TMs not marked as eligible or exempt <span class="emphasis">WILL NOT</span> appear above.
+                    </p>
+                </div>
+
+                <button id="add-edit-button">Add</button>
+            </form>
+
+            <hr>
+
+            <!-- Nav Buttons -->
+            <nav>
+                <a id="prev" href="/">Back: Basic Info</a>
+                <a id="next" href="/attendees">Next: Attendees</a>
+            </nav>
+        </main>
+    </div>
+
+    <script src="scripts/tabs.js"></script>
+    <script src="scripts/menus.js"></script>
+</body>
+
+</html>

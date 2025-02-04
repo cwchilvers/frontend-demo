@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="./assets/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destination Imagination | Team Registration</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/basic_info.css">
+</head>
+
+<body>
+
+    <!-- Container -->
+    <div id="container">
+
+        <!-- Header -->
+        <Header>
+            <img src="assets/logo.svg">
+            <h1>Team Registration</h1>
+        </Header>
+
+        <!-- Stepper -->
+        <div id="step">
+            <div class="text">
+                <h2>Basic Info</h2>
+                <p>Step 1</p>
+            </div>
+            <img src="assets/stepper-1.svg" height="30px">
+        </div>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Instructions -->
+            <div class="instruction">
+                <p>Review your team's information in the fields below.</p>
+                <p class="emphasis">Make sure all details are accurate before proceeding.</p>
+            </div>
+
+            <hr>
+
+            <!-- Form -->
+            <form>
+                <table>
+                    <tr>
+                        <td><label for="organization">Organization:</label></td>
+                        <td><input type="text" value="7 Kids and a TM"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="team-name">Team Name:</label></td>
+                        <td><input type="text" value="What's the First Rule of DI?"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="from">From:</label></td>
+                        <td><input type="text" value="Morganton"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="team-challenge">Team Challenge:</label></td>
+                        <td><input type="text" value="Engineering Challenge"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="team-level">Team Level:</label></td>
+                        <td><input type="text" value="Secondary">
+                    </tr>
+                    <tr>
+                        <td><label for="native-language">Native Language:</label></td>
+                        <td><input type="text" value="English"></td>
+                    </tr>
+                </table>
+            </form>
+
+            <hr>
+
+            <!--
+                I removed the Terms Agreement section from this page 
+                since I believe that should belong in the end.
+            -->
+
+            <!-- Nav Buttons -->
+            <nav>
+                <a id="prev" href="/">Exit Registration</a>
+                <a id="next" href="/attendees">Next: Attendees</a>
+            </nav>
+        </main>
+    </div>
+</body>
+
+</html>
