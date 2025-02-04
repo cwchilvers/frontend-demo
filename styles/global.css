@@ -258,6 +258,28 @@ nav #prev {
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
 }
 
+/* Page Selection */
+.page-selection {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.page {
+    color: var(--black);
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.page.active {
+    background-color: #9355da;
+    color: #fff;
+}
+
 /* Responsive */
 .desktop {
     display: block;
@@ -266,8 +288,6 @@ nav #prev {
 .mobile {
     display: none;
 }
-
-
 
 
 /* -------------------------------- Mobile -------------------------------- */
