@@ -217,18 +217,25 @@ nav {
 nav a {
     text-decoration: none;
     display: inline-block;
-    padding: 12px 30px;
+    padding: 10px 30px;
+    width: 160px;
     font-weight: 600;
     border-radius: 12px;
     text-align: center;
     transition: all 0.2s ease-in-out;
     font-size: 16px;
-    display: inline-flex;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
     justify-content: center;
 }
 
-#prev {
+nav p {
+    font-weight: normal;
+    font-size: 12px;
+}
+
+nav #prev {
     border: 2px solid #eae6f1;
     background-color: var(--white);
     color: var(--black);
