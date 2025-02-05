@@ -6,6 +6,19 @@
     --black: #353542;
 }
 
+/* Scrollbar */
+::-webkit-scrollbar {
+    background-color: #00000000;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #8b42de;
+    border-radius: 5px;
+}
+
 /* General Elements */
 body {
     font-family: 'Poppins', sans-serif;
