@@ -29,7 +29,8 @@ body {
     border-radius: 15px;
     filter: drop-shadow(0px 0px 8px var(--black));
     padding: 20px;
-    max-width: 90%;
+    width: 100%;
+    max-width: 1000px;
     min-width: 620px;
     overflow: auto;
     overflow-x: hidden;
@@ -131,6 +132,21 @@ hr {
 /* Tabs */
 #tabbed-form {
     width: 100%;
+    min-width: 100%;
+}
+
+.desktop {
+    width: 100%;
+}
+
+.tab {
+    width: 100%;
+    min-width: 100%;
+}
+
+table {
+    width: 100%;
+    min-width: 100%;
 }
 
 .tabs {
@@ -142,7 +158,6 @@ hr {
     gap: 5px;
     width: 100%;
 }
-
 
 .tabs button {
     background-color: #928f99;
@@ -392,7 +407,6 @@ nav #prev {
 
     form table {
         width: 100%;
-
     }
 
     form td {
